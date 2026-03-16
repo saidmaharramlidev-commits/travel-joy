@@ -1,0 +1,170 @@
+#mainHomeServices {
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color: #f5f5f5;
+}
+
+
+
+#nameOfServices {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+
+}
+
+
+
+
+#textOfServices {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem
+}
+
+
+#services-img-wrapper {
+    width: 90%;
+    height: 650px;
+
+}
+
+#imgOfServices {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#services-wrapper {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.service {
+    width: 40%;
+    min-height: 200px;
+}
+
+.service h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.service p {
+    color: #555;
+}
+
+.service span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+
+.icon-service {
+    font-size: 1.5rem;
+    color: rgb(54, 49, 49);
+}
+
+
+#service-cta {
+    width: 200px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+
+}
+
+#service-cta:hover {
+    background: none;
+    color: black;
+    border: 1px solid black;
+}
+
+
+@media(max-width:1000px) {
+    .service {
+        width: 48%;
+    }
+}
+
+
+@media(max-width:900px) {
+    .service h1 {
+        font-size: 1.6rem;
+    }
+
+    #textOfServices {
+        font-size: 2.1rem;
+    }
+
+    #services-img-wrapper {
+        height: 450px;
+    }
+}
+
+@media(max-width:900px) {
+    .service {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    #services-wrapper {
+        gap: 5px;
+    }
+}
+
+@media(max-width:600px) {
+
+    #services-img-wrapper {
+        height: 350px;
+    }
+
+}
+
+@media(max-width:500px) {
+    #mainHomeServices {
+        padding-bottom: 50px;
+    }
+
+    #services-img-wrapper {
+        height: 250px;
+    }
+
+    #textOfServices {
+        font-size: 1.5rem;
+    }
+
+    #nameOfServices {
+        margin-top: 50px;
+    }
+
+}
+
+@media(max-width:400px) {
+    #services-img-wrapper {
+        height: 200px;
+    }
+
+    .service h1 {
+        font-size: 1.3rem;
+    }
+
+}

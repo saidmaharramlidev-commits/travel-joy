@@ -8,6 +8,9 @@ import Image from "next/image";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import HomeLocation from "@/components/HomeLocation";
+import HomeAbout from "@/components/HomeAbout";
+import HomePackages from "@/components/HomePackages";
+import HomeServices from "@/components/HomeServices";
 
 
 export default function Home() {
@@ -55,6 +58,9 @@ export default function Home() {
       </Swiper>
 
       <HomeLocation />
+      <HomeAbout />
+      <HomePackages />
+      <HomeServices />
 
 
 

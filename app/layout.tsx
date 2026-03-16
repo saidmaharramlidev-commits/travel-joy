@@ -10,7 +10,9 @@ import { Provider } from 'react-redux'
 import "@/css/navbar.css"
 import "@/css/homePage.css"
 import "@/css/homeLocation.css"
-
+import '@/css/homeAbout.css'
+import '@/css/homePackages.css'
+import "@/css/homeServices.css"
 
 
 const metadata: Metadata = {
