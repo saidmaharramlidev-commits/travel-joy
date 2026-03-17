@@ -5,6 +5,7 @@ import package1 from "@/public/familyPackage.jpg"
 import package2 from "@/public/honeymoonPackage.jpg"
 import package3 from "@/public/adventurePack.jpg"
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import Link from "next/link"
 
 function HomePackages() {
     return (
@@ -38,10 +39,10 @@ function HomePackages() {
                         <div className="cta-wrapper">
                             <h2>$2000</h2>
 
-                            <div className="arrow-wrapper">
+                            <Link href={'https://wa.me/994501234567'} className="arrow-wrapper">
                                 <ArrowOutwardIcon className="arrow" />
 
-                            </div>
+                            </Link>
 
                         </div>
 
@@ -71,10 +72,10 @@ function HomePackages() {
                         <div className="cta-wrapper">
                             <h2>$2000</h2>
 
-                            <div className="arrow-wrapper">
+                            <Link href={'https://wa.me/994501234567'} className="arrow-wrapper">
                                 <ArrowOutwardIcon className="arrow" />
 
-                            </div>
+                            </Link>
 
                         </div>
                     </div>
@@ -101,10 +102,10 @@ function HomePackages() {
                         <div className="cta-wrapper">
                             <h2>$2000</h2>
 
-                            <div className="arrow-wrapper">
+                            <Link href={'https://wa.me/994501234567'} className="arrow-wrapper">
                                 <ArrowOutwardIcon className="arrow" />
 
-                            </div>
+                            </Link>
 
                         </div>
                     </div>

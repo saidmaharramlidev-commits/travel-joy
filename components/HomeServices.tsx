@@ -4,10 +4,19 @@ import { AiOutlineInsurance } from "react-icons/ai";
 import { RiVisaFill } from "react-icons/ri";
 import { IoTicketSharp } from "react-icons/io5";
 import { FaCity } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 
 
 
 function HomeServices() {
+
+    const router = useRouter()
+
+
+
+
+
+
     return (
         <div id="mainHomeServices">
             <h4 id="nameOfServices">( Services )</h4>
@@ -40,7 +49,7 @@ function HomeServices() {
 
             </div>
 
-            <div id="service-cta" className="center">All services
+            <div id="service-cta" className="center" onClick={() => router.push('/services')} >All services
 
             </div>
 

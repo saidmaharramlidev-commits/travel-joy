@@ -1,0 +1,189 @@
+#mainFooter {
+    width: 100%;
+    min-height: 500px;
+    background-color: #08090D;
+}
+
+#footer-content-wrapper {
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#topFooter {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 350px;
+}
+
+#logo-wrapper-footer {
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-wrapper-footer p {
+    color: white;
+}
+
+#logo-footer {
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.endpoints,
+.contact-things {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.endpoints h1 {
+    color: white;
+
+}
+
+.endpointLink {
+    text-decoration: none;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.contact-things h1 {
+    color: white;
+
+}
+
+.contact-things p {
+    color: gray;
+    display: flex;
+    gap: 10px;
+    height: 20px;
+    align-items: center;
+
+}
+
+
+
+
+#bottomFooter {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#bottomFooter span {
+    color: gray;
+}
+
+.social-media-wrapper {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icons-footer {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+
+@media(max-width:1200px) {
+    #logo-wrapper-footer {
+        width: 30%;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:1100px) {
+    #logo-wrapper-footer {
+        width: 35%;
+    }
+
+}
+
+@media(max-width:1000px) {
+    #logo-wrapper-footer {
+        width: 40%;
+    }
+
+}
+
+@media(max-width:900px) {
+
+    #topFooter {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    #logo-wrapper-footer {
+        width: 70%;
+
+    }
+
+    #logo-footer {
+        width: 50%;
+    }
+
+
+}
+
+@media(max-width:500px) {
+
+
+    #logo-wrapper-footer {
+        width: 90%;
+    }
+
+    #logo-footer {
+        width: 50%;
+    }
+
+    #bottomFooter {
+        height: 60px;
+    }
+
+
+}
+
+@media(max-width:400px) {
+    #bottomFooter span {
+        font-size: 0.8rem;
+
+    }
+
+    #logo-wrapper-footer p {
+        font-size: 0.9rem;
+    }
+
+    .social-media-wrapper {
+        width: 12%;
+    }
+
+}

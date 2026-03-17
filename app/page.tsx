@@ -11,6 +11,8 @@ import HomeLocation from "@/components/HomeLocation";
 import HomeAbout from "@/components/HomeAbout";
 import HomePackages from "@/components/HomePackages";
 import HomeServices from "@/components/HomeServices";
+import Footer from "@/components/Footer";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -32,10 +34,10 @@ export default function Home() {
 
             </div>
             <h1>Explore breathtaking destinations, unforgettable adventures.</h1>
-            <div className="swiper-cta">
+            <Link href={'https://wa.me/994501234567'} className="swiper-cta">
               Book Your Trip
 
-            </div>
+            </Link>
 
           </div>
           <Image className="swiper-pic" src={pic1} alt="picture" />
@@ -47,10 +49,10 @@ export default function Home() {
 
             </div>
             <h1>Explore breathtaking destinations, unforgettable adventures.</h1>
-            <div className="swiper-cta">
+            <Link href={'https://wa.me/994501234567'} className="swiper-cta">
               Book Your Trip
 
-            </div>
+            </Link>
 
           </div>
           <Image className="swiper-pic" src={pic2} alt="picture" />
@@ -61,6 +63,7 @@ export default function Home() {
       <HomeAbout />
       <HomePackages />
       <HomeServices />
+      <Footer />
 
 
 

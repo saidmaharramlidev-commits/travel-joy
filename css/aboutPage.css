@@ -1,0 +1,151 @@
+#aboutPage-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    width: 99%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+
+
+#leftAboutPageDiv {
+    width: 45%;
+}
+
+
+#leftAboutPageDiv h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#leftAboutPageDiv p {
+    line-height: 30px;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.rightAboutPageDiv {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+.picOfAboutPage {
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+@media(max-width:1200px) {
+    #aboutPage-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #leftAboutPageDiv {
+        width: 90%;
+    }
+
+    .picOfAboutPage {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media(max-width:1000px) {
+    #aboutPage-wrapper {
+        padding-top: 50px;
+    }
+
+    .rightAboutPageDiv {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .picOfAboutPage {
+        width: 100%;
+        height: 400px;
+    }
+
+}
+
+@media(max-width:900px) {
+
+    #leftAboutPageDiv h1 {
+        font-size: 2.3rem;
+    }
+
+    .picOfAboutPage {
+        height: 300px;
+    }
+
+}
+
+
+@media(max-width:700px) {
+
+    #leftAboutPageDiv h1 {
+        font-size: 1.8rem;
+    }
+
+    #aboutPage-wrapper {
+        padding-top: 30px;
+    }
+
+
+
+
+
+    #leftAboutPageDiv p {
+        line-height: 25px;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    #leftAboutPageDiv h1 {
+        font-size: 1.5rem;
+    }
+
+    .picOfAboutPage {
+        height: 250px;
+    }
+}
+
+@media(max-width:500px) {
+    #leftAboutPageDiv h1 {
+        font-size: 1.3rem;
+    }
+
+    .picOfAboutPage {
+        height: 200px;
+    }
+}
+
+@media(max-width:400px) {
+    #leftAboutPageDiv h1 {
+        font-size: 1rem;
+    }
+
+}

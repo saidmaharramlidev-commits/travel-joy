@@ -4,8 +4,9 @@ import { setNavbarStatus } from "@/redux/counterSlice";
 import { RootState } from "@/redux/store";
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
-import { useDispatch, UseDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 function Navbar() {
@@ -13,29 +14,45 @@ function Navbar() {
     const dispatch = useDispatch()
     const { navbarStatus } = useSelector((state: RootState) => state.counter)
 
+    const links = [
+        { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
+        { name: "Services", href: "/services" },
+        { name: "Tours", href: "/tours" },
+        { name: "Contact", href: "/contact" },
+    ];
+
+    const pathname = usePathname()
+    const router = useRouter()
+
+
 
 
 
     return (
         <div id="mainNavbar">
-            <div id="navbarLogo-wrapper">
+            <div id="navbarLogo-wrapper" onClick={() => router.push('/')}>
                 <Image id="navbar-logo" src={Logo} alt="Logo" />
 
             </div>
 
             <div id="endpoints-navbar" className={navbarStatus ? "active" : ''}>
-                <Link className="endpoint" href={"#"}>Home</Link>
-                <Link className="endpoint" href={"#"}>About</Link>
-                <Link className="endpoint" href={"#"}>Services</Link>
-                <Link className="endpoint" href={"#"}>Tours</Link>
-                <Link className="endpoint" href={"#"}>Contact</Link>
+                {links.map(link => (
+                    <Link
+                        key={link.href}
+                        href={link.href}
+                        className={`endpoint ${pathname === link.href ? 'activeLink' : ''}`}
+                    >
+                        {link.name}
+                    </Link>
+                ))}
 
             </div>
 
-            <div id="navbar-cta">
+            <Link href={'https://wa.me/994501234567'} id="navbar-cta">
                 Contact us
 
-            </div>
+            </Link>
 
             <div id="navbar-menu" onClick={() => dispatch(setNavbarStatus())}>
                 <IoMenu id="navbar-menu-icon" />

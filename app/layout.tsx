@@ -13,7 +13,10 @@ import "@/css/homeLocation.css"
 import '@/css/homeAbout.css'
 import '@/css/homePackages.css'
 import "@/css/homeServices.css"
-
+import '@/css/footer.css'
+import '@/css/aboutPage.css'
+import '@/css/servicesPage.css'
+import '@/css/contactPage.css'
 
 const metadata: Metadata = {
   title: "TravelJoy",
