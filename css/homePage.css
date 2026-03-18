@@ -69,6 +69,7 @@
     font-size: 0.9rem;
     transition: all 0.4s;
     background-color: #D4B258;
+    -webkit-tap-highlight-color: transparent;
 }
 
 

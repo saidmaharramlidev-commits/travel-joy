@@ -47,6 +47,11 @@ function Navbar() {
                     </Link>
                 ))}
 
+                <Link href={'https://wa.me/994501234567'} className="endpointCta">
+                    Contact us
+
+                </Link>
+
             </div>
 
             <Link href={'https://wa.me/994501234567'} id="navbar-cta">
